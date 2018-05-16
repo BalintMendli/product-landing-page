@@ -1,0 +1,247 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+body,html{
+   text-align: center;
+   background-color: #eee;
+   font-family: 'Lato', sans-serif;
+}
+
+#header{
+   width: 100%;
+   position: fixed;
+   display: flex;
+   justify-content: space-between;
+   top: 0px;
+   background-color: #eee;
+   padding-top: 10px;
+}
+
+
+
+#header-img{
+   width: 300px;
+   height: 34px;
+   display: block;
+}
+
+#nav-bar{
+   width: 40%;
+   font-size: 1.1em;
+}
+
+ul{
+   padding: 0px;
+}
+
+li{
+   list-style: none;
+   /* margin-right: 25px;
+   margin-left: 25px; */
+   line-height: 25px;
+}
+
+a {
+   color: #000;
+   text-decoration: none;
+}
+
+nav ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   margin-right: 80px;
+}
+
+@media (max-width: 600px){
+   nav ul{
+      flex-direction: column;
+   }
+}
+
+#main-content{
+   max-width: 900px;
+   margin-top: 80px;
+   margin-left: auto;
+   margin-right: auto;
+   display: relative;
+}
+
+form{
+   display: flex;
+   flex-direction: column;
+   max-width: 30%;
+   margin:auto;
+}
+
+#email{
+   max-width: 275px;
+   width: 100%;
+   padding: 5px;
+}
+
+#submit{
+   max-width: 150px;
+   width: 100%;
+   height: 30px;
+   margin: auto;
+   margin-top: 15px;
+   margin-bottom: 20px;
+   border: 0;
+   background-color: #f1c40f;
+   font-size: 1em;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+#features{
+   display: flex;
+   flex-direction: column;
+}
+
+.feats{
+   display: flex;
+   flex-direction: row;
+}
+
+.icons{
+   width: 20%;
+}
+
+.descs{
+   width: 80%;
+   text-align: left;
+}
+
+#icon1{
+   background-image: url(https://www.freeiconspng.com/uploads/new-flame-icon-png-12.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+#icon2{
+   background-image: url(http://www.iconsplace.com/icons/preview/orange/truck-256.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+#icon3{
+   background-image: url(http://www.iconsplace.com/icons/preview/orange/full-battery-256.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+@media (max-width: 600px){
+   #icon1,#icon2,#icon3{
+      display: none;
+   }
+}
+
+#features{
+   height: 400px;
+   margin-bottom: 25px;
+}
+
+#feat1{
+   height: 33%;
+}
+
+#feat2{
+   height: 33%;
+}
+
+#feat3{
+   height: 33%;
+}
+
+#video{
+   margin-bottom: 25px;
+}
+
+#pricing{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+#pric1,#pric2,#pric3{
+   width: 30%;
+   border: 2px solid black;
+   border-radius: 4px;
+}
+
+@media (max-width: 600px){
+   #pricing{
+      flex-direction: column;
+   }
+   #pric1,#pric2,#pric3{
+      width:100%;
+   }
+}
+
+.pric-head{
+   height:40px;
+   width:100%;
+   background-color: #ddd;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: bold;
+}
+
+.pric-desc{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding-top: 20px;
+}
+
+.pric-desc h2{
+ margin: 10px;
+}
+
+#footer{
+   background-color: #ddd;
+   max-width: 900px;
+   margin: auto;
+   padding: 15px;
+   margin-top: 20px;
+}
+
+#footer-links ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
+   margin: 0px;
+}
+
+#footer-links ul li{
+   width:10%;
+}
+
+#copyright{
+   text-align: right;
+   color: #666;
+   margin-right: 15px;
+}
+
+.select{
+   max-width: 150px;
+   width: 100%;
+   height: 30px;
+   margin: auto;
+   margin-top: 15px;
+   margin-bottom: 20px;
+   border: 0;
+   background-color: #f1c40f;
+   font-size: 1em;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.select:hover, #submit:hover{
+   background-color: orange;
+   transition: background-color 1s;
+}
