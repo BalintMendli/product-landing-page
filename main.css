@@ -112,22 +112,12 @@ form{
    text-align: left;
 }
 
-#icon1{
-   background-image: url(https://www.freeiconspng.com/uploads/new-flame-icon-png-12.png);
-   background-size: contain;
-   background-repeat: no-repeat;
-}
-
-#icon2{
-   background-image: url(http://www.iconsplace.com/icons/preview/orange/truck-256.png);
-   background-size: contain;
-   background-repeat: no-repeat;
-}
-
-#icon3{
-   background-image: url(http://www.iconsplace.com/icons/preview/orange/full-battery-256.png);
-   background-size: contain;
-   background-repeat: no-repeat;
+#icon1, #icon2, #icon3{
+   color: #EE5622;
+   vertical-align: middle;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 @media (max-width: 600px){
