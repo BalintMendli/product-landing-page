@@ -16,8 +16,6 @@ body,html{
    padding-top: 10px;
 }
 
-
-
 #header-img{
    width: 300px;
    height: 34px;
@@ -25,7 +23,7 @@ body,html{
 }
 
 #nav-bar{
-   width: 40%;
+   width: 35%;
    font-size: 1.1em;
 }
 
@@ -35,8 +33,6 @@ ul{
 
 li{
    list-style: none;
-   /* margin-right: 25px;
-   margin-left: 25px; */
    line-height: 25px;
 }
 
@@ -48,14 +44,8 @@ a {
 nav ul{
    display: flex;
    flex-direction: row;
-   justify-content: space-around;
+   justify-content: space-between;
    margin-right: 80px;
-}
-
-@media (max-width: 600px){
-   nav ul{
-      flex-direction: column;
-   }
 }
 
 #main-content{
@@ -77,6 +67,7 @@ form{
    max-width: 275px;
    width: 100%;
    padding: 5px;
+   margin:auto;
 }
 
 #submit{
@@ -120,11 +111,7 @@ form{
    align-items: center;
 }
 
-@media (max-width: 600px){
-   #icon1,#icon2,#icon3{
-      display: none;
-   }
-}
+
 
 #features{
    height: 400px;
@@ -158,15 +145,6 @@ form{
    width: 30%;
    border: 2px solid black;
    border-radius: 4px;
-}
-
-@media (max-width: 600px){
-   #pricing{
-      flex-direction: column;
-   }
-   #pric1,#pric2,#pric3{
-      width:100%;
-   }
 }
 
 .pric-head{
@@ -234,4 +212,63 @@ form{
 .select:hover, #submit:hover{
    background-color: orange;
    transition: background-color 1s;
+}
+
+@media (max-width: 950px){
+   #header{
+      flex-direction: column;
+   }
+   #nav-bar{
+      width: 100%;
+   }
+   nav ul{
+      margin-right: 100px;
+      margin-left: 100px;
+   }
+   #main-content{
+      margin-top: 140px;
+   }
+}
+
+@media (max-width: 650px){
+   #icon1,#icon2,#icon3{
+      display: none;
+   }
+   .descs{
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+   }
+   #pricing{
+      flex-direction: column;
+   }
+   #pric1,#pric2,#pric3{
+      width:90%;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 10px;
+   }
+   form{
+      max-width: 60%;
+   }
+   #footer-links ul{
+      justify-content: space-between;
+   }
+   #footer-links ul::before,
+   #footer-links ul::after {
+      content: '';
+      display: block;
+   }
+}
+
+@media (max-width: 450px){
+   nav ul{
+      flex-direction: column;
+   } 
+   #main-content{
+      margin-top: 160px;
+   }
+   form{
+      max-width: 90%;
+   }
 }
