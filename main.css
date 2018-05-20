@@ -1,12 +1,13 @@
 @import "https://fonts.googleapis.com/css?family=Lato:400,700";
 
-body,html{
+body,
+html {
    text-align: center;
    background-color: #eee;
-   font-family: 'Lato', sans-serif;
+   font-family: "Lato", sans-serif;
 }
 
-#header{
+#header {
    width: 100%;
    position: fixed;
    display: flex;
@@ -16,22 +17,22 @@ body,html{
    padding-top: 10px;
 }
 
-#header-img{
+#header-img {
    width: 300px;
    height: 34px;
    display: block;
 }
 
-#nav-bar{
+#nav-bar {
    width: 35%;
    font-size: 1.1em;
 }
 
-ul{
+ul {
    padding: 0px;
 }
 
-li{
+li {
    list-style: none;
    line-height: 25px;
 }
@@ -41,14 +42,14 @@ a {
    text-decoration: none;
 }
 
-nav ul{
+nav ul {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    margin-right: 80px;
 }
 
-#main-content{
+#main-content {
    max-width: 900px;
    margin-top: 80px;
    margin-left: auto;
@@ -56,21 +57,21 @@ nav ul{
    display: relative;
 }
 
-form{
+form {
    display: flex;
    flex-direction: column;
    max-width: 30%;
-   margin:auto;
+   margin: auto;
 }
 
-#email{
+#email {
    max-width: 275px;
    width: 100%;
    padding: 5px;
-   margin:auto;
+   margin: auto;
 }
 
-#submit{
+#submit {
    max-width: 150px;
    width: 100%;
    height: 30px;
@@ -84,72 +85,74 @@ form{
    text-transform: uppercase;
 }
 
-#features{
+#features {
    display: flex;
    flex-direction: column;
 }
 
-.feats{
+.feats {
    display: flex;
    flex-direction: row;
 }
 
-.icons{
+.icons {
    width: 20%;
 }
 
-.descs{
+.descs {
    width: 80%;
    text-align: left;
 }
 
-#icon1, #icon2, #icon3{
-   color: #EE5622;
+#icon1,
+#icon2,
+#icon3 {
+   color: #ee5622;
    vertical-align: middle;
    display: flex;
    justify-content: center;
    align-items: center;
 }
 
-
-
-#features{
+#features {
    height: 400px;
    margin-bottom: 25px;
 }
 
-#feat1{
+#feat1 {
    height: 33%;
 }
 
-#feat2{
+#feat2 {
    height: 33%;
 }
 
-#feat3{
+#feat3 {
    height: 33%;
 }
 
-#video{
+#video {
    margin-bottom: 25px;
 }
 
-#pricing{
+#pricing {
    width: 100%;
    display: flex;
    flex-direction: row;
    justify-content: space-around;
 }
 
-#pric1,#pric2,#pric3{
+#pric1,
+#pric2,
+#pric3 {
    width: 30%;
    border: 2px solid black;
    border-radius: 4px;
 }
 
-.pric-head{
-   height:40px;
-   width:100%;
+.pric-head {
+   height: 40px;
+   width: 100%;
    background-color: #ddd;
    display: flex;
    align-items: center;
@@ -157,7 +160,7 @@ form{
    font-weight: bold;
 }
 
-.pric-desc{
+.pric-desc {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -165,11 +168,11 @@ form{
    padding-top: 20px;
 }
 
-.pric-desc h2{
- margin: 10px;
+.pric-desc h2 {
+   margin: 10px;
 }
 
-#footer{
+#footer {
    background-color: #ddd;
    max-width: 900px;
    margin: auto;
@@ -177,7 +180,7 @@ form{
    margin-top: 20px;
 }
 
-#footer-links ul{
+#footer-links ul {
    display: flex;
    flex-direction: row;
    justify-content: flex-end;
@@ -185,17 +188,17 @@ form{
    margin: 0px;
 }
 
-#footer-links ul li{
-   width:10%;
+#footer-links ul li {
+   width: 10%;
 }
 
-#copyright{
+#copyright {
    text-align: right;
    color: #666;
    margin-right: 15px;
 }
 
-.select{
+.select {
    max-width: 150px;
    width: 100%;
    height: 30px;
@@ -209,66 +212,71 @@ form{
    text-transform: uppercase;
 }
 
-.select:hover, #submit:hover{
+.select:hover,
+#submit:hover {
    background-color: orange;
    transition: background-color 1s;
 }
 
-@media (max-width: 950px){
-   #header{
+@media (max-width: 950px) {
+   #header {
       flex-direction: column;
    }
-   #nav-bar{
+   #nav-bar {
       width: 100%;
    }
-   nav ul{
+   nav ul {
       margin-right: 100px;
       margin-left: 100px;
    }
-   #main-content{
+   #main-content {
       margin-top: 140px;
    }
 }
 
-@media (max-width: 650px){
-   #icon1,#icon2,#icon3{
+@media (max-width: 650px) {
+   #icon1,
+   #icon2,
+   #icon3 {
       display: none;
    }
-   .descs{
+   .descs {
       width: 90%;
       margin-right: auto;
       margin-left: auto;
    }
-   #pricing{
+   #pricing {
       flex-direction: column;
    }
-   #pric1,#pric2,#pric3{
-      width:90%;
+   #pric1,
+   #pric2,
+   #pric3 {
+      width: 90%;
       margin-right: auto;
       margin-left: auto;
       margin-bottom: 10px;
    }
-   form{
+   form {
       max-width: 60%;
    }
-   #footer-links ul{
+   #footer-links ul {
       justify-content: space-between;
    }
    #footer-links ul::before,
    #footer-links ul::after {
-      content: '';
+      content: "";
       display: block;
    }
 }
 
-@media (max-width: 450px){
-   nav ul{
+@media (max-width: 450px) {
+   nav ul {
       flex-direction: column;
-   } 
-   #main-content{
+   }
+   #main-content {
       margin-top: 160px;
    }
-   form{
+   form {
       max-width: 90%;
    }
 }
